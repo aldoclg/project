@@ -33,11 +33,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Install postgresql client
-      run: |
-        apt-get update
-        apt-get install --yes --no-instal-recomends postgres-client
-
     - name: Migration
       run: make migration
     

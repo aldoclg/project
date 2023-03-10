@@ -17,5 +17,6 @@ test:
 	go test -v --cover ./...
  
 migration:
-	psql -d postgres -U root -a -f ./db/schema/shema.sql
+	psql -d postgresql://root@localhost/postgres -a -f ./db/schema/shema.sql
+
 	
