@@ -22,23 +22,23 @@ jobs:
           --health-timeout 5s
           --health-retries 5
 
-      steps:
-        - name: Set up Go
-          uses: actions/setup-go@v3
-          with:
-            go-version: '1.19'
+    steps:
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: '1.19'
 
-          id: go
+      id: go
 
-        - name: Checkout code
-          uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-        - name: Install postgresql client
-          run: apt-get install --yes postgres-client
+    - name: Install postgresql client
+      run: apt-get install --yes postgres-client
 
-        - name: Migration
-          run: make migration
-        
-        - name: Test
-          run: make test
+    - name: Migration
+      run: make migration
+    
+    - name: Test
+      run: make test
   
