@@ -17,6 +17,6 @@ test:
 	go test -v --cover ./...
  
 migration:
-	psql -d postgresql://root:password@localhost:5432/root?sslmode=disable -a -f ./db/schema/shema.sql
+	psql -d postgresql://root:password@localhost:5432/root?sslmode=disable -a -f ./db/schema/schema.sql
 
 	
