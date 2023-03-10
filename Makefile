@@ -17,5 +17,5 @@ test:
 	go test -v --cover ./...
  
 migration:
-	psql -d postgres -U user -a -f ./db/schema/shema.sql
+	psql -d postgres -U root -a -f ./db/schema/shema.sql
 	
