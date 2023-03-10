@@ -7,7 +7,7 @@ on:
 jobs:
   test:
     name: Test
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
     services:
       postgres:
