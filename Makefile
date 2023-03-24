@@ -19,4 +19,7 @@ test:
 migration:
 	psql -d postgresql://root:password@localhost:5432/root?sslmode=disable -a -f ./db/schema/schema.sql
 
+server:
+	go run main.go
+
 	
