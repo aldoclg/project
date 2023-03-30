@@ -22,4 +22,7 @@ migration:
 server:
 	go run main.go
 
+make:
+	mockgen --package mockdb --destination db/mock/store.go github.com/aldoclg/project/db/sqlc Store
+
 	

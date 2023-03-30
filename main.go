@@ -4,9 +4,9 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/aldoclg/banking/api"
-	db "github.com/aldoclg/banking/db/sqlc"
-	"github.com/aldoclg/banking/util"
+	"github.com/aldoclg/project/api"
+	db "github.com/aldoclg/project/db/sqlc"
+	"github.com/aldoclg/project/util"
 	_ "github.com/lib/pq"
 )
 

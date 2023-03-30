@@ -6,7 +6,7 @@ import (
 	"log"
 	"testing"
 
-	"github.com/aldoclg/banking/util"
+	"github.com/aldoclg/project/util"
 	"github.com/stretchr/testify/require"
 )
 

@@ -6,7 +6,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/aldoclg/banking/util"
+	"github.com/aldoclg/project/util"
 	_ "github.com/lib/pq"
 )
 
